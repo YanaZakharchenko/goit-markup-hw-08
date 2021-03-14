@@ -1,0 +1,47 @@
+/* ПОРТФОЛИО */
+/* СПИСОК ПРОЕКТОВ */
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+
+  &__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: var(--border-projects);
+
+    @include transition(box-shadow);
+    // transition: box-shadow var(--animation);
+
+    &:hover,
+    &:focus {
+      box-shadow: var(--shadow-project);
+    }
+  }
+
+  &__conteiner {
+    padding: 20px 24px;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--color-dark);
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--color-gray);
+  }
+}
+
+.projects-list > .projects-list__item:nth-child(3n) {
+  margin-right: 0;
+}

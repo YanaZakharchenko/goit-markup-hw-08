@@ -1,0 +1,32 @@
+/* Оверлей */
+
+.overlay {
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-white);
+}
+
+.overlay__conteiner {
+  position: absolute;
+  width: 100%;
+  height: 294px;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  background-color: var(--background-portfolio);
+
+  transform: translateY(100%);
+  @include transition(transform);
+  // transition: transform var(--animation);
+}
+
+.projects-list__item:hover .overlay__conteiner,
+.projects-list__item:focus .overlay__conteiner {
+  transform: translateY(0);
+}

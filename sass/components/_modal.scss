@@ -1,0 +1,62 @@
+/* МОДАЛКА */
+
+.backdrop-order {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-backdrop);
+  opacity: 1;
+
+  //   transition: opasity var(--animation);
+  @include transition(opasity);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-order {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  box-shadow: var(--shadow-modal-order);
+  background-color: var(--color-white);
+  transform: translate(-50%, -50%) scale(1);
+
+  //   transition: transform var(--animation);
+  @include transition(transform);
+}
+
+.backdrop-order.is-hidden .modal-order {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.modal-order__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: var(--border-modal-close);
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.modal-order__icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.modal-order__close:hover .modal-order__icon,
+.modal-order__close:focus .modal-order__icon {
+  fill: var(--color-blue);
+}

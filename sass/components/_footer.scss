@@ -1,0 +1,110 @@
+/* ФУТЕР */
+
+.footer {
+  background-color: var(--color-graphite);
+  padding: 60px 0;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  color: var(--color-blue);
+
+  &-studio {
+    color: var(--color-white);
+  }
+}
+
+.footer__info-contacts {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.footer__info-address {
+  color: var(--color-white);
+  margin-top: 20px;
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--color-blue);
+  }
+}
+
+.footer__info-link {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--color-blue);
+  }
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__item {
+  margin-right: 10px;
+
+  &--last {
+    margin-right: 0;
+  }
+}
+
+.footer__icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-icons);
+  fill: var(--color-white);
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-blue);
+  }
+}
+
+/* ФОРМА РОЗССИЛКИ */
+
+.footer__mailing-input {
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border-radius: 4px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: var(--border-mailing-input);
+  box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  @include transition(border);
+
+  &:hover,
+  &:focus {
+    border: var(--border-clients-hover);
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer__mailing-icon {
+  margin-left: 10px;
+}

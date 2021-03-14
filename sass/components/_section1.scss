@@ -1,0 +1,29 @@
+/* section 1 */
+
+.section-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    max-width: 270px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-original);
+    border-radius: 4px;
+    max-width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-weight: 400;
+    line-height: 1.7;
+
+    color: var(--color-gray);
+  }
+}

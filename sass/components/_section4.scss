@@ -1,0 +1,29 @@
+//section 4
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+    border: var(--border-clients);
+    fill: var(--color-icons);
+
+    transition: fill var(--animation), border var(--animation);
+
+    &:hover,
+    &:focus {
+      fill: var(--color-blue);
+      border: var(--border-clients-hover);
+    }
+  }
+
+  &__icon {
+    fill: inherit;
+  }
+}

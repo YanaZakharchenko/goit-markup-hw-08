@@ -1,0 +1,70 @@
+/* СЕКЦИЯ 3 */
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+
+  &__card {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: var(--shadow-card);
+
+    background-color: var(--color-white);
+
+    &--last {
+      margin-right: 0;
+    }
+  }
+}
+
+.team-list__size {
+  padding: 30px;
+  text-align: center;
+}
+
+.team-list__member {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.team-list__position {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-gray);
+  margin-bottom: 28px;
+}
+
+.team-links {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin-right: 10px;
+
+    &--last {
+      margin-right: 0;
+    }
+  }
+
+  .team-links__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--color-icons);
+
+    transition: fill var(--animation), background-color var(--animation);
+
+    &:hover,
+    &:focus {
+      fill: var(--color-white);
+      background-color: var(--color-blue);
+    }
+  }
+}
