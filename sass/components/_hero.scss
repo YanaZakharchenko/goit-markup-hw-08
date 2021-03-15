@@ -1,31 +1,53 @@
 /* ГЕРОЙ */
 .hero {
   background: var(--color-graphite);
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)),
+    url(../images/heromobile@1.jpg);
   max-width: 1600px;
-  height: 600px;
+  // height: 600px;
+  min-height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   text-align: center;
-  padding: 200px 0;
+  // padding: 200px 0;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and(min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)),
+      url(../images/herotablet@1.jpg);
+  }
+
+  @media screen and(min-width: 1200px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)),
+      url(../images/herodesktop@1.jpg);
+    min-height: 600px;
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  // font-size: 44px;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
 
-  width: 696px;
+  // width: 696px;
   margin: 0 auto 30px;
+
+  @media screen and(min-width: 480px) {
+    width: 360px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.2;
+    width: 696px;
+  }
 }

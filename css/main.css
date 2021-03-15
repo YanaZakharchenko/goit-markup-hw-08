@@ -73,11 +73,28 @@ img {
 }
 
 .conteiner {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
 }
 
 .header--border {
@@ -85,7 +102,7 @@ img {
 }
 
 .section-size {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .section-size--features {
@@ -138,8 +155,15 @@ img {
 .title-third {
   font-size: inherit;
   text-transform: uppercase;
+  text-align: center;
   color: var(--color-dark);
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .title-third {
+    text-align: left;
+  }
 }
 
 .title-third--color {
@@ -247,27 +271,57 @@ img {
 /* ГЕРОЙ */
 .hero {
   background: var(--color-graphite);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4))), url(../images/heromobile@1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(../images/heromobile@1.jpg);
   max-width: 1600px;
-  height: 600px;
+  min-height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4))), url(../images/herotablet@1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(../images/herotablet@1.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4))), url(../images/herodesktop@1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(../images/herodesktop@1.jpg);
+    min-height: 600px;
+    padding: 200px 0;
+  }
+}
+
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
-  width: 696px;
   margin: 0 auto 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.2;
+    width: 696px;
+  }
 }
 
 /* МОДАЛКА */
@@ -486,17 +540,41 @@ img {
 }
 
 /* section 1 */
-.section-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .section-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .section-list__item {
-  max-width: 270px;
+  width: 100%;
+}
+
+.section-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-list__item {
+    max-width: 354px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .section-list__item:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-list__item {
+    width: 270px;
+  }
 }
 
 .section-list__icons {
@@ -511,7 +589,7 @@ img {
           align-items: center;
   background-color: var(--color-original);
   border-radius: 4px;
-  max-width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
 }
