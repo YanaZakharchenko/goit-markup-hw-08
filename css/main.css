@@ -105,6 +105,12 @@ img {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-size {
+    padding: 94px 0;
+  }
+}
+
 .section-size--features {
   padding-top: 0;
 }
@@ -573,7 +579,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section-list__item {
-    width: 270px;
+    max-width: 270px;
   }
 }
 
