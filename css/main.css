@@ -681,7 +681,6 @@ img {
   .team-list__card {
     -ms-flex-preferred-size: calc(100% / 4 - 30px);
         flex-basis: calc(100% / 4 - 30px);
-    margin-bottom: 0;
   }
   .team-list__card:not(:last-child) {
     margin-right: 30px;
