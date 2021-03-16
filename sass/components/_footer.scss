@@ -6,9 +6,17 @@
 }
 
 .footer__nav {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and(min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
@@ -22,9 +30,16 @@
 }
 
 .footer__info-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
+
+  @media screen and(min-width: 1200px) {
+    align-items: start;
+  }
 }
 
 .footer__info-address {
@@ -64,7 +79,7 @@
 }
 
 .footer__icon {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
@@ -84,9 +99,9 @@
 /* ФОРМА РОЗССИЛКИ */
 
 .footer__mailing-input {
-  width: 358px;
+  width: 100%;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border-radius: 4px;
   color: var(--color-white);
   background-color: transparent;
@@ -102,6 +117,16 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: unset;
   }
 }
 
