@@ -19,10 +19,14 @@
 
     @media screen and(min-width: 768px) {
       flex-basis: calc(100% / 2 - 30px);
+      &:not(:last-child) {
+        margin-bottom: unset;
+      }
     }
 
     @media screen and(min-width: 1200px) {
       flex-basis: calc(100% / 4 - 30px);
+      margin-bottom: 0;
 
       &:not(:last-child) {
         margin-right: 30px;
