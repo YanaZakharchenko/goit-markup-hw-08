@@ -32,7 +32,12 @@
 
 //section 2
 .section-size--features {
-  padding-top: 0;
+  display: none;
+
+  @media screen and(min-width: 1200px) {
+    display: block;
+    padding-top: 0;
+  }
 }
 
 //section 3
@@ -67,11 +72,16 @@
 }
 
 .title-second {
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   color: var(--color-dark);
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .title-third {
