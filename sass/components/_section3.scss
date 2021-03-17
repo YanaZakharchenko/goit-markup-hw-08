@@ -5,13 +5,33 @@
   // flex-wrap: wrap;
   // margin-right: -30px;
 
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+
   &__card {
-    // flex-basis: calc(100% / 4 - 30px);
-    // margin-right: 30px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: var(--shadow-card);
-
     background-color: var(--color-white);
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 768px) {
+      max-width: calc(100% / 2 - 30px);
+      // max-width: 354px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      max-width: calc(100% / 4 - 30px);
+      // max-width: 270px;
+    }
 
     // &--last {
     //   margin-right: 0;

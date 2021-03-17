@@ -662,11 +662,41 @@ img {
 }
 
 /* СЕКЦИЯ 3 */
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+
 .team-list__card {
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: var(--shadow-card);
           box-shadow: var(--shadow-card);
   background-color: var(--color-white);
+}
+
+.team-list__card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__card {
+    max-width: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__card {
+    max-width: calc(100% / 4 - 30px);
+  }
 }
 
 .team-list__size {
