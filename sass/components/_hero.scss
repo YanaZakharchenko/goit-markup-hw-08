@@ -4,14 +4,12 @@
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)),
     url(../images/heromobile@1.jpg);
   max-width: 1600px;
-  // height: 600px;
   min-height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   text-align: center;
-  // padding: 200px 0;
   padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
@@ -31,14 +29,12 @@
 
 .hero__title {
   font-weight: 900;
-  // font-size: 44px;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
 
-  // width: 696px;
   margin: 0 auto 30px;
 
   @media screen and(min-width: 480px) {
