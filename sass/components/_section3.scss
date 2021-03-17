@@ -1,36 +1,21 @@
 /* СЕКЦИЯ 3 */
 
 .team-list {
-  @media screen and(min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-  }
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-right: -30px;
 
   &__card {
-    max-width: 450px;
+    // flex-basis: calc(100% / 4 - 30px);
+    // margin-right: 30px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: var(--shadow-card);
+
     background-color: var(--color-white);
 
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-
-    @media screen and(min-width: 768px) {
-      flex-basis: calc(100% / 2 - 30px);
-      &:not(:last-child) {
-        margin-bottom: unset;
-      }
-    }
-
-    @media screen and(min-width: 1200px) {
-      flex-basis: calc(100% / 4 - 30px);
-
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
+    // &--last {
+    //   margin-right: 0;
+    // }
   }
 }
 
