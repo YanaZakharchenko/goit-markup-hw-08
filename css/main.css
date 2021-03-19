@@ -235,18 +235,6 @@ img {
   color: var(--color-blue);
 }
 
-.header__conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .header__list {
   font-weight: 500;
   line-height: 1.14;
@@ -1033,18 +1021,28 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 56px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.btn-menu__list {
+.btn-menu__list:not(:last-child) {
   margin-right: 8px;
 }
 
-.btn-menu__list--last {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .btn-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-menu {
+    margin-bottom: 50px;
+  }
 }
 
 .btn-menu__btn {
@@ -1079,9 +1077,6 @@ img {
     margin-top: -30px;
     margin-left: -30px;
   }
-  .projects-list:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 
 .projects-list__item {
@@ -1092,10 +1087,14 @@ img {
   transition: box-shadow var(--animation), -webkit-box-shadow var(--animation);
 }
 
+.projects-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .projects-list__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
   }
@@ -1106,8 +1105,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .projects-list__item {
-    -ms-flex-preferred-size: calc((100% - 120px) / 4);
-        flex-basis: calc((100% - 120px) / 4);
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
   }
 }
 
