@@ -7,18 +7,18 @@
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
-
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
   }
 
   &__item {
     border: var(--border-projects);
     @include transition(box-shadow);
 
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
     @media screen and(min-width: 768px) {
-      flex-basis: calc((100% - 60px) / 2);
+      flex-basis: calc(100% / 2 - 30px);
       margin-top: 30px;
       margin-left: 30px;
 
@@ -28,7 +28,7 @@
     }
 
     @media screen and(min-width: 1200px) {
-      flex-basis: calc((100% - 120px) / 4);
+      flex-basis: calc(100% / 3 - 30px);
     }
 
     &:hover,
