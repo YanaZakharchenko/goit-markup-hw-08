@@ -1293,16 +1293,14 @@ body.modal-open {
   position: absolute;
   top: 10px;
   right: 15px;
+  padding: 0;
   cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--color-white);
 }
 
-.menu-mobile__icon {
-  position: absolute;
-  top: 11px;
-  right: 11px;
-}
-
-.menu-mobile__close:focus .menu-mobile__icon {
+.menu-mobile__close:focus {
   fill: var(--color-blue);
 }
 
