@@ -268,7 +268,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 12px;
-    margin-left: 84px;
+    margin-left: auto;
     padding: 0;
   }
 }
@@ -346,14 +346,14 @@ img {
   }
 }
 
+.header__mobile-menu:hover, .header__mobile-menu:focus {
+  color: var(--color-blue);
+}
+
 @media screen and (min-width: 768px) {
   .header__mobile-menu {
     display: none;
   }
-}
-
-.header__mobile-menu:hover, .header__mobile-menu:focus {
-  color: var(--color-blue);
 }
 
 /* ГЕРОЙ */
