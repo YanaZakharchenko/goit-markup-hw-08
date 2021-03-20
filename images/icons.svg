@@ -4,6 +4,6 @@
 <symbol id="icon-person" viewBox="0 0 32 32"><path d="M16 16a5.33 5.33 0 100-10.66A5.33 5.33 0 0016 16zm0 2.67c-3.56 0-10.67 1.78-10.67 5.33v1.33c0 .74.6 1.34 1.34 1.34h18.66c.74 0 1.34-.6 1.34-1.34V24c0-3.55-7.11-5.33-10.67-5.33z"/></symbol>
 <symbol id="icon-send" viewBox="0 0 32 32"><path fill="var(--color2, #fff)" d="M32 0L0 18l10.23 3.79L26 7 14 23.19h.01H14V32l5.74-6.7L27 28l5-28z"/></symbol>
 <symbol id="menu_40px(1)" viewBox="0 0 32 32"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.67V12h24v2.67H8zm0 6.66h24v-2.66H8v2.66zM8 28h24v-2.67H8V28z"/></symbol>
-<symbol id="close_40px(1)" viewBox="0 0 32 32"><path d="M29.67 12.88L27.79 11l-7.46 7.45L12.88 11 11 12.88l7.45 7.45L11 27.8l1.88 1.88 7.45-7.46 7.46 7.46 1.88-1.88-7.46-7.46 7.46-7.45z" fill="#212121"/></symbol>
+<symbol id="close" viewBox="0 0 32 32"><path d="M18.67 1.88L16.79 0 9.33 7.45 1.88 0 0 1.88l7.45 7.45L0 16.8l1.88 1.88 7.45-7.46 7.46 7.46 1.88-1.88-7.46-7.46 7.46-7.45z"/></symbol>
 </defs></svg>
 

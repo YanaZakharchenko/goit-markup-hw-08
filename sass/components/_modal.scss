@@ -9,7 +9,6 @@
   background-color: var(--background-backdrop);
   opacity: 1;
 
-  //   transition: opasity var(--animation);
   @include transition(opasity);
 }
 
@@ -23,15 +22,19 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
   box-shadow: var(--shadow-modal-order);
   background-color: var(--color-white);
   transform: translate(-50%, -50%) scale(1);
 
-  //   transition: transform var(--animation);
   @include transition(transform);
+
+  @media screen and(min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop-order.is-hidden .modal-order {
