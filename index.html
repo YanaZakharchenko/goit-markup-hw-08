@@ -35,13 +35,13 @@
             <li class="header__item">
               <a class="header__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="header__item header__item--last">
+            <li class="header__item">
               <a class="header__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="header__list header__conteiner">
+        <ul class="header__list header__conteiner header__conteiner--tablet">
           <li class="header__item">
             <a class="header__contact" href="mailto:info@devstudio.com">
               <svg class="header__phone" width="16px" height="12px">
@@ -50,7 +50,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="header__item header__item--last">
+          <li class="header__item">
             <a class="header__contact" href="tel:+380961111111">
               <svg class="header__phone" width="10px" height="16px">
                 <use href="./images/icons.svg#phone"></use>
@@ -59,6 +59,10 @@
             >
           </li>
         </ul>
+
+        <svg class="header__mobile-menu" width="40px" height="40px">
+          <use href="./images/icons.svg#menu_40px(1)"></use>
+        </svg>
       </div>
     </header>
 
@@ -472,15 +476,16 @@
     </footer>
 
     <!-- МОДАЛКА -->
-    <!-- <div class="backdrop-order is-hidden" data-modal>
+    <div class="backdrop-order is-hidden" data-modal>
       <div class="modal-order">
         <button class="modal-order__close" data-modal-close>
           <svg class="modal-order__icon" width="18px" height="18px">
             <use href="./images/icons.svg#close"></use>
           </svg>
-        </button> -->
-    <!--  ФОРМА МОДАЛКИ -->
-    <!-- <form class="form-modal">
+        </button>
+
+        <!--  ФОРМА МОДАЛКИ -->
+        <form class="form-modal">
           <p class="form-modal__title">
             Оставьте свои данные, мы вам перезвоним
           </p>
@@ -547,7 +552,7 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>
