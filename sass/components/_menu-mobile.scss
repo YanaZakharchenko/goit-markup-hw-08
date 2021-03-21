@@ -8,7 +8,7 @@
   overflow-y: scroll;
 }
 
-.menu-mobile.is-hidden {
+.menu-mobile.is-open {
   display: none;
 }
 
@@ -87,7 +87,12 @@
 }
 
 .menu-mobile__social-item:not(:last-child) {
-  margin-right: 20px;
+  padding-right: 10px;
+  border-right: var(--border-form-input);
+}
+
+.menu-mobile__social-item:not(:first-child) {
+  padding-left: 10px;
 }
 
 .menu-mobile__social-link {
