@@ -463,12 +463,6 @@ body.modal-open {
   transition: opasity var(--animation);
 }
 
-@media screen and (max-width: 767px) {
-  .backdrop-order {
-    padding: 93px 15px;
-  }
-}
-
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -1284,7 +1278,7 @@ body.modal-open {
           box-shadow: var(--shadow-mobile-modal);
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   .menu-mobile_modal {
     position: absolute;
     top: 50%;
