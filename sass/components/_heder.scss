@@ -23,6 +23,7 @@
 }
 
 .header__conteiner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,6 +112,7 @@
 }
 
 .header__mobile-menu {
+  position: relative;
   &:hover,
   &:focus {
     color: var(--color-blue);

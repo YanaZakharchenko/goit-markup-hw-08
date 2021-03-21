@@ -256,6 +256,7 @@ body.modal-open {
 }
 
 .header__conteiner {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,6 +361,10 @@ body.modal-open {
   .header__phone {
     margin-right: 10px;
   }
+}
+
+.header__mobile-menu {
+  position: relative;
 }
 
 .header__mobile-menu:hover, .header__mobile-menu:focus {
