@@ -1283,7 +1283,7 @@ body.modal-open {
           box-shadow: var(--shadow-mobile-modal);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .menu-mobile_modal {
     position: absolute;
     top: 50%;
