@@ -60,18 +60,21 @@
           </li>
         </ul>
 
-        <svg
-          class="header__mobile-menu"
-          width="40px"
-          height="40px"
+        <button type="submit" class="header__mobile-menu js-open-menu" aria-expanded="false"
+        aria-controls="mobile-menu"
+        >
+          <svg
+          width="40"
+          height="40"
           type="submit"
           mobile-modal-open
         >
           <use
             class="header__mobile-icon"
-            href="./images/icons.svg#menu_40px(1)"
+            href="./images/icons.svg#icon-menu_mob"
           ></use>
         </svg>
+        </button>
       </div>
     </header>
 
@@ -565,9 +568,11 @@
 
     <!-- МОБ МЕНЮ -->
 
-    <div class="menu-mobile is-open" mobile-modal>
-      <div class="menu-mobile_modal">
-        <button class="menu-mobile__close" type="submit" mobile-modal-close>
+    <!-- <div class="menu-mobile is-open" mobile-modal> -->
+      <div class="menu-mobile_modal js-menu-container" id="menu-mobile_modal">
+        <button class="menu-mobile__close js-close-menu" type="submit" aria-expanded="false" aria-controls="mobile-menu"
+
+        >
           <svg class="menu-mobile__icon" width="40" height="40">
             <use href="./images/icons.svg#close"></use>
           </svg>
@@ -621,7 +626,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    <!-- </div> -->
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>

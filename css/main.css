@@ -364,7 +364,9 @@ body.modal-open {
 }
 
 .header__mobile-menu {
-  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .header__mobile-menu:hover, .header__mobile-menu:focus {
@@ -478,8 +480,8 @@ body.modal-open {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  max-height: 609px;
   border-radius: 4px;
   -webkit-box-shadow: var(--shadow-modal-order);
           box-shadow: var(--shadow-modal-order);
@@ -1262,37 +1264,23 @@ body.modal-open {
           transform: translateY(0);
 }
 
-.menu-mobile {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--background-backdrop);
-  overflow-y: scroll;
-}
-
-.menu-mobile.is-open {
-  display: none;
-}
-
 .menu-mobile_modal {
   padding: 48px 40px;
   background-color: var(--color-white);
   -webkit-box-shadow: var(--shadow-mobile-modal);
           box-shadow: var(--shadow-mobile-modal);
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  width: 100vw;
+  height: 100vh;
 }
 
-@media screen and (min-width: 600px) {
-  .menu-mobile_modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 480px;
-    height: 796px;
-  }
+.menu-mobile_modal.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .menu-mobile__close {
@@ -1303,7 +1291,7 @@ body.modal-open {
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: var(--color-white);
+  background-color: transparent;
 }
 
 .menu-mobile__close:focus {
