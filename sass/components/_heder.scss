@@ -112,10 +112,13 @@
 }
 
 .header__mobile-menu {
+  width: 40px;
+  height: 40px;
   border: none;
+  outline: none;
   background-color: transparent;
   cursor: pointer;
-  
+
   &:hover,
   &:focus {
     color: var(--color-blue);
