@@ -59,15 +59,21 @@
           </li>
         </ul>
 
-        <svg
-          class="header__mobile-menu"
-          width="40px"
-          height="40px"
+        <button type="submit" class="header__mobile-menu js-open-menu" aria-expanded="false"
+        aria-controls="mobile-menu"
+        >
+          <svg
+          width="40"
+          height="40"
           type="submit"
           mobile-modal-open
         >
-          <use href="./images/icons.svg#menu_40px(1)"></use>
+          <use
+            class="header__mobile-icon"
+            href="./images/icons.svg#icon-menu_mob"
+          ></use>
         </svg>
+        </button>
       </div>
     </header>
 

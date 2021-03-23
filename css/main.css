@@ -385,8 +385,8 @@ body.modal-open {
 /* ГЕРОЙ */
 .hero {
   background: var(--color-graphite);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4))), url(../images/heromobile@1.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(../images/heromobile@1.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/heromobile@1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromobile@1.jpg);
   max-width: 1600px;
   min-height: 400px;
   background-size: cover;
@@ -400,15 +400,15 @@ body.modal-open {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4))), url(../images/heromobile@2.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(../images/heromobile@2.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/heromobile@2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heromobile@2.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4))), url(../images/herotablet@1.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(../images/herotablet@1.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/herotablet@1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotablet@1.jpg);
   }
 }
 
@@ -442,20 +442,15 @@ body.modal-open {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
+  max-width: 360px;
   margin: 0 auto 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .hero__title {
-    width: 360px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.2;
-    width: 696px;
+    max-width: 696px;
   }
 }
 
@@ -483,8 +478,7 @@ body.modal-open {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 450px;
-  max-height: 609px;
+  width: 450px;
   border-radius: 4px;
   -webkit-box-shadow: var(--shadow-modal-order);
           box-shadow: var(--shadow-modal-order);
