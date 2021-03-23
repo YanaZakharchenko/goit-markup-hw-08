@@ -364,8 +364,13 @@ body.modal-open {
 }
 
 .header__mobile-menu {
-  width: 40px;
-  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+  margin: 0;
   border: none;
   outline: none;
   background-color: transparent;
@@ -479,6 +484,7 @@ body.modal-open {
   top: 50%;
   left: 50%;
   width: 450px;
+  height: 609px;
   border-radius: 4px;
   -webkit-box-shadow: var(--shadow-modal-order);
           box-shadow: var(--shadow-modal-order);
@@ -1262,6 +1268,16 @@ body.modal-open {
 }
 
 .menu-mobile_modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 48px 40px;
   background-color: var(--color-white);
   -webkit-box-shadow: var(--shadow-mobile-modal);
@@ -1269,10 +1285,14 @@ body.modal-open {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
   width: 100vw;
   height: 100vh;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform var(--animation);
+  transition: -webkit-transform var(--animation);
+  transition: transform var(--animation);
+  transition: transform var(--animation), -webkit-transform var(--animation);
 }
 
 .menu-mobile_modal.is-open {
@@ -1293,10 +1313,6 @@ body.modal-open {
 
 .menu-mobile__close:focus {
   fill: var(--color-blue);
-}
-
-.menu-mobile__nav {
-  margin-bottom: 302px;
 }
 
 .menu-mobile__nav-item:not(:last-child) {

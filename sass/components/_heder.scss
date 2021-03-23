@@ -62,7 +62,6 @@
 
 .header__link {
   position: relative;
-
   color: var(--color-dark);
   padding: 32px 0;
 
@@ -112,8 +111,11 @@
 }
 
 .header__mobile-menu {
-  width: 40px;
-  height: 40px;
+  display: flex;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+  margin: 0;
   border: none;
   outline: none;
   background-color: transparent;
