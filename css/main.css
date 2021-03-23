@@ -1063,8 +1063,8 @@ body.modal-open {
   color: var(--color-white);
   background-color: transparent;
   border: var(--border-mailing-input);
-  -webkit-box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition: border var(--animation);
   transition: border var(--animation);
 }
